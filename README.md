@@ -1,4 +1,4 @@
-# PersonalFinanceApp
+# PersonalFinanceApp - Backend
 
 PIRATE KING's personal finance app BACKEND
 
