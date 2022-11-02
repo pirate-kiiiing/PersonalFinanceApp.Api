@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>PirateKing.Modules</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudQueue\CloudQueue.csproj" />
+    <ProjectReference Include="..\Cosmos\Cosmos.csproj" />
+    <ProjectReference Include="..\Email\Email.csproj" />
+    <ProjectReference Include="..\KeyVault\KeyVault.csproj" />
+    <ProjectReference Include="..\Plaid\Plaid.csproj" />
+  </ItemGroup>
+
+</Project>

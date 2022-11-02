@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>PirateKing.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.42.0.1602" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudQueue\CloudQueue.csproj" />
+    <ProjectReference Include="..\Constants\Constants.csproj" />
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Cosmos\Cosmos.csproj" />
+    <ProjectReference Include="..\Guards\Guards.csproj" />
+    <ProjectReference Include="..\HttpUtils\HttpUtils.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Modules\Modules.csproj" />
+    <ProjectReference Include="..\Plaid\Plaid.csproj" />
+    <ProjectReference Include="..\Tokens\Tokens.csproj" />
+  </ItemGroup>
+</Project>

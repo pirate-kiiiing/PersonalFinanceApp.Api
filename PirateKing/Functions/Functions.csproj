@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <RootNamespace>PirateKing.Functions</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AzureFunctions.Autofac" Version="3.0.7" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="1.8.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.7" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configurations\Configurations.csproj" />
+    <ProjectReference Include="..\Constants\Constants.csproj" />
+    <ProjectReference Include="..\Cosmos\Cosmos.csproj" />
+    <ProjectReference Include="..\Diagnostic\Diagnostic.csproj" />
+    <ProjectReference Include="..\Guards\Guards.csproj" />
+    <ProjectReference Include="..\KeyVault\KeyVault.csproj" />
+    <ProjectReference Include="..\Modules\Modules.csproj" />
+    <ProjectReference Include="..\Plaid\Plaid.csproj" />
+    <ProjectReference Include="..\Tools\Tools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
